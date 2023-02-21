@@ -18,13 +18,14 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+       // Webpack plugin that generates our html file and injects our bundles. 
+       new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Text Editor'
+      }),
+     
     ],
 
-    module: {
-      rules: [
-        
-      ],
-    },
+    
   };
 };
