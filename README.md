@@ -24,10 +24,11 @@ The application is available at the link https://kas500-text-editor.herokuapp.co
 
 ### Home page screenshot
 
-
+![Screenshot 2023-02-22 at 9 02 15 PM](https://user-images.githubusercontent.com/38312017/220825018-d97f5d1f-bbd3-4ef3-972d-63999e0a4036.png)
 
 ### Installed app screenshot
 
+![Screenshot 2023-02-22 at 9 04 02 PM](https://user-images.githubusercontent.com/38312017/220825180-958b6829-c141-44a4-b2e0-9f6e95654087.png)
 
 
 ## Contributing
