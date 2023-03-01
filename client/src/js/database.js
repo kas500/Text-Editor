@@ -24,8 +24,8 @@ export const putDb = async (content) => {
   // Open up the desired object store.
   const store = tx.objectStore('jate');
 
-  // Use the .add() method on the store and pass in the content.
-  const request = store.add({ content: content});
+  // Use the .put() method on the store and pass in the content.
+  const request = store.put({ value: content});
 
   // Get confirmation of the request.
   const result = await request;
@@ -44,13 +44,12 @@ export const getDb = async () => {
   // Open up the desired object store.
   const store = tx.objectStore('jate');
 
-  // Use the .getAll() method to get all data in the database.
-  const request = store.getAll();
+  // Use the .get() method to get specific data in the database.
+  const request = store.get(1);
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('result.value', result);
-  return result.value;
+  return result;
 };
 
 // Export a function we will use to DELETE to the database.
@@ -71,8 +70,7 @@ export const deleteDb = async (id) => {
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('result.value', result);
-  return result?.value;
+  return result;
 };
 
 initdb();
